@@ -1,0 +1,30 @@
+CREATE TABLE cliente (
+     id SERIAL PRIMARY KEY,
+     cliente_nome VARCHAR(100),
+     cliente_cpf VARCHAR (14),
+     cliente_endereco VARCHAR (45),
+     cliente_telefone INT
+);
+
+CREATE TABLE pedido (
+     id SERIAL PRIMARY KEY,
+     cliente_id INT,
+     nome_pedido VARCHAR(50),
+     data_pedido DATE
+);
+
+CREATE TABLE produto (
+     id SERIAL PRIMARY KEY,
+     produto_nome VARCHAR (50),
+     produto_valor DECIMAL,
+     produto_estoque INT
+);
+
+CREATE TABLE item_pedido (
+    id SERIAL PRIMARY KEY,
+    pedido_id INT,
+    produto_id INT,
+    item_quantidade INT	
+);
+
+
