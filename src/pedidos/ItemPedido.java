@@ -1,4 +1,14 @@
 package pedidos;
 
 public class ItemPedido {
-}
+    private int id;
+    private Pedido pedido;
+    private Produto produto;
+    private int quantidade;
+
+    public ItemPedido(int id, Pedido pedido, Produto produto, int quantidade) {
+        this.id = id;
+        this.pedido = pedido;
+        this.produto = produto;
+        this.quantidade = quantidade;
+    }
