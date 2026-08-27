@@ -12,3 +12,20 @@ public class ItemPedido {
         this.produto = produto;
         this.quantidade = quantidade;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+}
